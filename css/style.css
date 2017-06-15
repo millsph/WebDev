@@ -1,4 +1,4 @@
-.jumbotron {
+/*.jumbotron {
     background: url('../img/landscape.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -8,7 +8,7 @@
 
 .jumbotron p {
     color: white;
-}
+}   */ 
 
 .container-fluid {
     padding: 0em;
@@ -24,7 +24,7 @@
 }
 
 .carousel-caption {
-    top: 40%;
+    top: 40%;  
     transform: translate(-50%, -50%);
     display: block;
     left: 50%;
@@ -37,7 +37,7 @@
     width: 100%;
     top: 0;
     /* padding: 20px;*/
-    z-index: 1;
+    /* z-index: 1; */
 }
 
  .nav ul {
@@ -58,7 +58,7 @@
     display: inline-block;
     color: white;
     text-align: centre;
-    padding: 1.25em 1.25em;
+    padding: 1.20m 1.20m;
     text-decoration: none;
     transition: color 1000ms;
     -webkit-transition: color 1000ms;
@@ -87,7 +87,7 @@
     font-family: Calibri, Book Antiqua, Tahoma, Verdana;
     font-size: 1.125em;
     text-align: left;
-    background-image: url("../img/little-2.jpg");  /* no-repeat center center fixed;  */
+    background-image: url("../img/little-2.jpg");  
     background-attachment: fixed;
    -webkit-background-size: cover;
     -moz-background-size: cover;

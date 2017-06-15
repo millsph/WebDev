@@ -8,9 +8,7 @@
         <title>About Me</title>
 
         <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
-
-        <!-- Custom styles  -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/style.css"/>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,35 +20,37 @@
 
     <body data-spy="scroll" data-target=".navbar">
        <!-- Collect the nav links, forms, and other content for toggling  -->
-       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-           <div class="container-fluid" > 
+       <!--  Navbar section  -->
+       <!--  =============== -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid" > 
 
-           <!-- create hamburger menu when the navigation bar is collapsed-->
-           <div class="navbar-header">
-             <button type="button" class="navbar-toggle" data-toggle="collapse"
-               data-target=".navbar-collapse">
-                <span class="sr-only"> Toggle navigation </span>
-                <span class="icon-bar"> </span>
-                <span class="icon-bar"> </span>
-                <span class="icon-bar"> </span>
-             </button>
-             <div class="projectName navbar-brand">
-           
-                <a href="#"> &nbsp; Lan Mills </a>
-             </div>  <!-- end of project name -->
-           </div>  <!-- end of navbar-header -->
+             <!-- create hamburger menu when the navigation bar is collapsed-->
+             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only"> Toggle navigation </span>
+                    <span class="icon-bar"> </span>
+                    <span class="icon-bar"> </span>
+                    <span class="icon-bar"> </span>
+                </button>
+                <div class="projectName navbar-brand">       
+                    <a href="#"> &nbsp; Lan Mills </a>
+                </div>  <!-- end of project name -->
+             </div>  <!-- end of navbar-header -->
 
-            <div class="navbar-collapse collapse" >
+             <div class="navbar-collapse collapse" >
               <ul class="nav navbar-nav navbar-right">
-                <li ><a href="index.html">Home</a> </li>
-                <li ><a href="#contact">Contact</a></li>
-                <li ><a href="#about">About</a></li>  
-                <li ><a href="#faq">FAQ</a></li>          
+                  <li ><a href="#faq">FAQ</a></li>               
+                <li ><a href="#contact">CONTACT</a></li>
+                <li ><a href="#about">ABOUT</a></li>                   
+                 <li ><a href="#home">HOME</a> </li>       
               </ul>
              </div> <!-- end of navbar-collapse  -->
             </div> <!-- end of container-fluid --> 
-       </nav> <!-- end of navbar  --> 
+        </nav> <!-- end of navbar  --> 
+       
         <!-- Main carousel  -->
+        <div class="container-fluid" id="home">
             <div id="carousel-main" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -135,35 +135,7 @@
 
         </div> <!--  end of container -->
 
-<!-- begin of contact.html-->
-<div class="container anchor" id="contact" >
-    <div class="header">
-    <h2> <b> &nbsp; &nbsp; &nbsp;Contact Me </b></h2> 
-    <br/>
-    </div>
-
-    <h3> &nbsp; &nbsp; &nbsp; Drop me a line </h3>
-        <div class="email column" >
-                Have you found any common interest or hobbies to share. Or do you have any questions about programming, gardening, or cooking - I love Aussie, Vietnamese and Thai food and will add my favourite recipes soon - then drop me a line. I would also love to see your marine fishes, tropical fishes, or aquatic plants.  
-                <p>
-                <a href= href="mailto:phammills@gmail.com"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  
-                </a>
-                  Email Me: <b> <a href="mailto:phammills@gmail.com"> phammills@gmail.com </a> </b>
-                </p>
-        </div>
-    <h3> &nbsp; &nbsp; &nbsp;  Send me text on  </h3>
-    <div class="mobile column">
-    <span class="glyphicon glyphicon-phone" aria-hidden="true"> </span> 
-       <b>Mob: (+61) 406669162 </b>
-    </div>  
-    <div class="thanks"> 
-    <h3> &nbsp; &nbsp; &nbsp; Thanks for visting and see you soon. </h3>
-     <br/> <br/> <br/>   <br/>     <br/>       
-    </div>
-    
- </div>  <!-- end of contact.html-->
-
-<!-- beginning of about.html  -->
+        <!-- beginning of about.html  -->
 
 <div class="container-fluid" id="about">
   <br/>     <br/> <br/> <br/>    
@@ -200,6 +172,36 @@
         <br/> <br/> <br/>                 
  </div> <!--  end container-fluid  -->
  <!-- end of about.html  -->
+        
+<!-- begin of contact.html-->
+<div class="container anchor" id="contact" >
+    <div class="header">
+    <h2> <b> &nbsp; &nbsp; &nbsp;Contact Me </b></h2> 
+    <br/>
+    </div>
+
+    <h3> &nbsp; &nbsp; &nbsp; Drop me a line </h3>
+        <div class="email column" >
+                Have you found any common interest or hobbies to share. Or do you have any questions about programming, gardening, or cooking - I love Aussie, Vietnamese and Thai food and will add my favourite recipes soon - then drop me a line. I would also love to see your marine fishes, tropical fishes, or aquatic plants.  
+                <p>
+                <a href= href="mailto:phammills@gmail.com"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  
+                </a>
+                  Email Me: <b> <a href="mailto:phammills@gmail.com"> phammills@gmail.com </a> </b>
+                </p>
+        </div>
+    <h3> &nbsp; &nbsp; &nbsp;  Send me text on  </h3>
+    <div class="mobile column">
+    <span class="glyphicon glyphicon-phone" aria-hidden="true"> </span> 
+       <b>Mob: (+61) 406669162 </b>
+    </div>  
+    <div class="thanks"> 
+    <h3> &nbsp; &nbsp; &nbsp; Thanks for visting and see you soon. </h3>
+     <br/> <br/> <br/>   <br/>     <br/>       
+    </div>
+    
+ </div>  <!-- end of contact.html-->
+
+
 
 
 <!-- beginning of faq.html -->
@@ -265,9 +267,9 @@
               <br> <br> <br>        <br> <br> <br>       <br> <br> <br>       
 </div>  <!-- end of faq.html -->
 
-
-
+        <!-- ============================= -->
         <!-- JavaScript  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script type="text/javascript">
             var $root = $('html, body');
                 $('.navbar-nav a').click(function() {
@@ -281,8 +283,15 @@
                     return false;
                 });
         </script>
+        
+        <!-- Script to Activate the Carousel -->
+        <script>  
+        $('.carousel').carousel({
+            interval: 8000 //changes the speed
+        });
+        </script><!-- End Script to Activate the Carousel -->
+        
         <!-- ============================= -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Bootstrap core JS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <!--  script tags with JavaScript files here -->
