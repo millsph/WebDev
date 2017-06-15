@@ -1,14 +1,16 @@
-/*.jumbotron {
-    background: url('../img/landscape.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;    
-    background-size:cover;
+* { box-sizing: border-box; }
+
+/* Typography */
+h1,h2,h3 {
+    text-align: left;
+    font-family: Calibri, Futura, Helvetica, Arial,Sans-serif;
 }
 
-.jumbotron p {
-    color: white;
-}   */ 
+.header h1{
+    text-align: left;
+    font-family: Calibri, Book Antiqua, Tahoma, Verdana;
+}  
+
 
 .container-fluid {
     padding: 0em;
@@ -29,6 +31,7 @@
     display: block;
     left: 50%;
     width: 80%;
+    filter: drop-shadow(10px 10px 2px #000);      
 }
 
 .nav {
@@ -37,7 +40,6 @@
     width: 100%;
     top: 0;
     /* padding: 20px;*/
-    /* z-index: 1; */
 }
 
  .nav ul {
@@ -67,9 +69,9 @@
 .navbar-inverse .navbar-nav > .active  > a:hover { color: #f50; }
 .navbar-inverse .navbar-nav > li > a:hover { color: #f50; }
 .navbar-nav a:hover {
-    /*color: #f50;  */
+    color: #f50;  
     text-decoration: none;
-}
+}  
 
 .container {
     padding: 0em;
@@ -79,6 +81,30 @@
 .anchor {
     padding-top: 7.75em; 
 }
+
+/*///////////  Work /////  */
+
+.work h1 {
+  font-family: 'Audiowide', cursive, sans-serif;
+  text-align: center;
+  filter: drop-shadow(10px 10px 2px #000);  
+  margin-top: 57px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.work  h2{
+    text-align: center; 
+}
+.work  img {
+  padding: 5px;
+  margin: 5px;
+  filter: drop-shadow(10px 10px 2px #000);   
+}
+
+
+
 /*////////////////////////////
 ///////////// Contact_page ///*/
 #contact {
@@ -128,14 +154,9 @@
     font-weight: 400;
 }
 
-.header h1, h2 {
-    text-align: left;
-    font-family: Tahoma, Verdana;
-}
 
 /* //////////// FAQ.html /////// */
 #faq {
-    /* background-color: #eafaf1;*/
     width: 100%;
     margin: 0 auto;
     font-family: Calibri, Book Antiqua, Tahoma, Verdana;
@@ -177,7 +198,7 @@
 
 /* //////////// About.html /////// */
 #about { 
-   width: 100%;
+    width: 100%;
     margin: 0 auto;
     font-family: Calibri, Book Antiqua, Tahoma, Verdana;
     font-size: 1.125em;
@@ -187,10 +208,6 @@
     -moz-background-size: cover;
     -o-background-size: cover;    
     background-size:cover;
-}
-
-.about-page h2 {
-   text-align: center ;
 }
 
 #about-c1{
@@ -219,7 +236,7 @@
     text-transform: none;   
 }
 
-.main-text {
+.about-text {
     width: 70%;
     height: auto;
     display: inline-block; 
@@ -231,12 +248,37 @@
     margin-left: 1em;
 }
 
-/* Typography */
-h1,h2,h3 {
-    text-align: left;
-    font-family: Futura, Helvetica, Arial,Sans-serif;
+/*/////  back to top button   www.menucool.com /////*/
+#backtop {
+    position: fixed;
+    left:auto;right: 20px;top:auto;bottom: 20px;
+	outline: none;
+    overflow:hidden;
+    color:#fff;
+    text-align:center;
+    background-color:rgba(49,79,96,0.84);
+    height:40px;
+    width:40px;
+    line-height:40px;
+    font-size:14px;
+    border-radius:2px;
+    cursor:pointer;
+    transition:all 0.3s linear;
+    z-index:999999;
+
+    opacity:1;
+    display:none;
 }
 
+#backtop:hover {
+    background-color:#27CFC3;
+ }
+
+ #backtop.mcOut {
+    opacity:0;
+ }
+
+ /*////////////////*/
 @media (max-width:30em) {
     body {
         position:relative;

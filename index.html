@@ -5,17 +5,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>About Me</title>
+        <title>Lan Mills - Home </title>
 
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+
+        <!-- script to go to top -->
+        <script src="js/float-panel.js"></script>        
     </head>
 
     <body data-spy="scroll" data-target=".navbar">
@@ -37,15 +40,30 @@
                     <a href="#"> &nbsp; Lan Mills </a>
                 </div>  <!-- end of project name -->
              </div>  <!-- end of navbar-header -->
-
+           
+             
              <div class="navbar-collapse collapse" >
               <ul class="nav navbar-nav navbar-right">
-                  <li ><a href="#faq">FAQ</a></li>               
+                <li ><a href="#faq">FAQ</a></li>               
                 <li ><a href="#contact">CONTACT</a></li>
+                
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" 
+                       href="#" role="button" aria-haspopup="true" aria-expanded="false"> 
+                       WORK <span class="caret"> </span> </a>
+                    <ul class="dropdown-menu" > 
+                        <li> <a href="#work1"> WORK - Project1 </a> </li>
+                        <li> <a href="#work2"> WORK - Project2 </a> </li>               
+                    </ul> 
+                </li>              
+           
+                
                 <li ><a href="#about">ABOUT</a></li>                   
-                 <li ><a href="#home">HOME</a> </li>       
+                <li ><a href="#home">HOME</a> </li>       
               </ul>
+ 
              </div> <!-- end of navbar-collapse  -->
+ 
             </div> <!-- end of container-fluid --> 
         </nav> <!-- end of navbar  --> 
        
@@ -134,17 +152,18 @@
             <hr/>
 
         </div> <!--  end of container -->
-
-        <!-- beginning of about.html  -->
-
-<div class="container-fluid" id="about">
-  <br/>     <br/> <br/> <br/>    
-    <h2> &nbsp; &nbsp; &nbsp;  &nbsp; <b>About Me</b> </h2> 
-      <br/> <br/>  
-    <div class="row" >
-    <div class="col-xs-12 col-sm-6 col-md-3" id="about-c1">
-        <img src="img/ocean-fishes-2.jpg" alt="Blue Dory" class="img-responsive">
-    </div><!-- /col -->
+      <hr>         
+    <!-- =======================  -->
+    <!-- About section            -->
+    <!-- =======================  -->
+    <div class="container-fluid" id="about">
+        <br/>     <br/>    
+        <h1> &nbsp; &nbsp; &nbsp;  &nbsp; <b> About Me </b></h1> 
+        <br/> <br/>  
+        <div class="row" >
+        <div class="col-xs-12 col-sm-6 col-md-3" id="about-c1">
+            <img src="img/ocean-fishes-2.jpg" alt="Blue Dory" class="img-responsive">
+        </div><!-- /col -->
     <div class="col-xs-12 col-sm-6 col-md-3" id="about-c2">
           <p> 
                Programming is fun, just like building a model with a bucket of lego pieces. One by one put the pieces together for your model.     
@@ -163,20 +182,66 @@
         </div>  <!-- /col -->
   </div>  <!--end row -->
 
-     <div class="main-text"> 
-         <h3> More About Me ... </h3>
-    <p> In the last 20 years, travelling around the world, I made a lot of friends around the globe. I continue to persue my interest in computer programing. It requires me work with pattern matching, systemic thinking, and structured reasoning. These things motivate me the most. 
+     <div class="about-text"> 
+         <h3><b> More about me ... </b></h3>
+    <p><i> In the last 20 years, travelling around the world, I made a lot of friends around the globe. I continue to persue my interest in computer programing. It requires me work with pattern matching, systemic thinking, and structured reasoning. These things motivate me the most. 
         My hobbies are gardening, cooking and looking after my fishes 
-    </p>
+    </i></p>
      </div>
         <br/> <br/> <br/>                 
  </div> <!--  end container-fluid  -->
  <!-- end of about.html  -->
-        
+     <hr>  
+
+    <!-- ======================= -->
+    <!-- Work section            -->
+    <!-- ======================= -->
+
+    <div class="container-fluid anchor work" id="work1" >
+      <div class="header" id="work-header">
+        <h1>WORK - Project 1</h1>
+        <h2>Bonus work</h2>
+        <p> <center>See my calculator <a href="calculator.html">here</a>  
+        </center> 
+        </p>
+      </div><!-- end header -->
+
+    </div><!-- end of work1 container-->
+
+      <hr>
+
+      
+    <div class="container-fluid anchor work" id="work2">
+      <div class="header" id="work-header">
+        <h1>WORK - Project 2</h1>
+      </div><!-- end header -->
+
+      <div class="row" >
+        <div class="col-md-3 col-sm-4 col-xs-12" >
+          <img src="img/gingerkitten.jpg" class="img-responsive ">
+          <p><center> Ginger kitten </center></p>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+          <img src="img/gingerkitten.jpg" class="img-responsive">
+          <p><center> Ginger kitten </center></p>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+          <img src="img/gingerkitten.jpg" class="img-responsive">
+          <p><center> Ginger kitten </center></p>
+        </div> 
+        <div class="col-md-3 col-sm-4 col-xs-12">
+          <img src="img/gingerkitten.jpg" class="img-responsive">
+          <p><center> Ginger kitten </center></p>
+        </div>
+ 
+      </div>
+    </div><!-- end of work2 container-->
+    <hr>
+       
 <!-- begin of contact.html-->
 <div class="container anchor" id="contact" >
     <div class="header">
-    <h2> <b> &nbsp; &nbsp; &nbsp;Contact Me </b></h2> 
+    <h1> <b> &nbsp; &nbsp; &nbsp;Contact Me </b></h1> 
     <br/>
     </div>
 
@@ -196,12 +261,10 @@
     </div>  
     <div class="thanks"> 
     <h3> &nbsp; &nbsp; &nbsp; Thanks for visting and see you soon. </h3>
-     <br/> <br/> <br/>   <br/>     <br/>       
+     <br/> <br/> <br/> <br/>  <br/>       
     </div>
     
  </div>  <!-- end of contact.html-->
-
-
 
 
 <!-- beginning of faq.html -->
@@ -209,7 +272,7 @@
 <div class="container" id="faq">
     <div class="header">
         <br/> <br/>  
-    <h2>&nbsp; &nbsp; &nbsp; <b>Frequently Ask Questions </b></h2> 
+    <h1>&nbsp; &nbsp; &nbsp; <b>Frequently Ask Questions </b></h1> 
     <br/>     <br/>
     </div>
 
@@ -267,8 +330,10 @@
               <br> <br> <br>        <br> <br> <br>       <br> <br> <br>       
 </div>  <!-- end of faq.html -->
 
+<div id="backtop">&#9650;</div>
+
         <!-- ============================= -->
-        <!-- JavaScript  -->
+        <!-- JavaScript  scroling when click on navbar -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script type="text/javascript">
             var $root = $('html, body');
@@ -289,12 +354,21 @@
         $('.carousel').carousel({
             interval: 8000 //changes the speed
         });
+              
         </script><!-- End Script to Activate the Carousel -->
         
+
         <!-- ============================= -->
         <!-- Bootstrap core JS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <!--  script tags with JavaScript files here -->
+        
+         <script>  <!-- collapse dropdown menus on clicking an item -->
+            $(".dropdown-menu a").click
+             (
+               function() { $(this).closest(".dropdown-menu").prev().dropdown("toggle");}
+             );
+         </script>       
 
     </body>
 </html>
