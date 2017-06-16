@@ -1,0 +1,109 @@
+2nd submit: fixing the smooth using click on the menu links (javascript), home highlight and selected item is enline with menu bar. 
+URL: https://github.com/millsph/WebDev.git
+https://gist.github.com/millsph/d6e197bd991908a8f5ec1cf1b72e2bc9
+
+=============================================
+
+
+1st submit:
+URL: https://millsph.github.io/WebDev/
+share files:  https://gist.github.com/millsph/a2ffc6c0bf46ec00eba7b3c628085977
+
+=======================================
+
+1.10 - Single page scrolling navigation.
+1. Transform website navigation to create one long scrolling page with multiple sections:
+combine all the pages into several sections in index.html. By adding section ID, and padding and margins
+
+
+2. Add Scrollspy to the top of your navigation bar in the body tag.
+
+<body data-spy="scroll" data-target=".navbar">
+Make body position relative in your CSS file.
+
+body {
+  position: relative;
+}
+
+Make sure your navigation bar does in fact have the class navbar applied to it. Bootstrap's JavaScript will do the rest. 
+<body data-spy="scroll" data-target=".navbar">
+ <!--navbar starts here-->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+       …
+  </nav> <!-- end navbar-->
+
+ 3. To design a responsive navigation bar, we need to make the original unordered list items collapsible when we resize the browser screen. 
+  Use the “navbar-collapse collapse” classes for the div. Give the <ul> a class of “nav navbar-nav”. 
+  Enclose your list items in <ul> and the <div> tags, and close the tags, like in the following example:
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+          Your list items here
+          ...
+      </ul>
+    </div> <!-- nav -->
+  </div> <!-- end nav container-->
+</nav> <!-- end navbar-->
+
+
+4. Then, add a button that only appears when the navigation bar is collapsed one level of indentation inside your navbar-header div. 
+This series of spans bearing the Bootstrap class icon-bar creates the common "hamburger" menu; 
+a stacked-bar icon that expands into a full menu on mobile devices.
+
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse"
+  data-target=".navbar-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  
+5. Overwrite bootstrap classes: 
+using Web Developer > Inpsector  (from the browser menu - firefox) 
+Select the element eg: click on an element - the pseudo classes display , search for :hover (an item to debug - for example :hover) then identify Bootstrap'default styling - then modify the value for testing ; when happy with the result - copy the change and implement in CSS. 
+
+
+6. Smooth scrolling: 
+using javascript -
+Insert the following JavaScript code at the bottom of the page to enable smooth scrolling. 
+We put it there because we don’t want it to run until the whole page has loaded.
+
+<script type="text/javascript">
+  var $root = $('html, body');
+    $('.navbar-nav a').click(function() {
+        var href = $.attr(this, 'href');
+    if(href != undefined) {
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 500, function () {
+        window.location.hash = href;
+        });
+    }
+        return false;
+    });
+</script>
+
+7. Parallax effect:
+using CSS :
+#contact{
+    background-image: url("../img/yourimagenamehere.jpg");
+/*Add a background image*/
+    background-attachment: fixed;
+/*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover;
+/*Have the background cover the entire div section*/
+    color: white;
+/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+    padding:100px;
+    padding-top: 50px;
+    height: 400px;
+}
+
+8. get bootstrap for dropdown menu. 
+
+http://getbootstrap.com/components/#nav
+

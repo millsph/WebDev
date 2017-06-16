@@ -1,0 +1,47 @@
+
+URL:  https://millsph.github.io/WebDev1.11/
+
+https://gist.github.com/millsph/b5b5f3e01527c6e294c2c2b4c9a8a869   (16/6/2017)
+https://gist.github.com/millsph/455caf8d113461cce10273be2fa6f2b9  
+https://gist.github.com/millsph/d6e197bd991908a8f5ec1cf1b72e2bc9 (old)
+
+=======================================
+Responsive Website: 
+
+1.10 - Single page scrolling navigation.
+
+1. Transform website navigation to create one long scrolling page with multiple sections:
+combine all the pages into several sections in index.html. By adding section ID, and padding and margins
+
+2. Add Scrollspy to the top of your navigation bar in the body tag.
+
+3. To design a responsive navigation bar, we need to make the original unordered list items collapsible when we resize the browser screen. 
+
+
+4. Then, add a button that only appears when the navigation bar is collapsed one level of indentation inside your navbar-header div. 
+This series of spans bearing the Bootstrap class icon-bar creates the common "hamburger" menu; 
+a stacked-bar icon that expands into a full menu on mobile devices.
+
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse"
+  data-target=".navbar-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  
+5. Overwrite bootstrap classes: 
+
+6. Smooth scrolling: 
+using javascript -
+
+
+7. Parallax effect:
+using CSS :
+
+8. get bootstrap for dropdown menu. 
+
+http://getbootstrap.com/components/#nav
+
+9. Draw calculator using flexbox CSS3
